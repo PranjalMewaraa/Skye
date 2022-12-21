@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardd"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="32dp"
+        android:padding="5dp"
+        android:background="@color/white"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/locCardTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="16dp"
+                android:paddingBottom="16dp"
+                android:text="Register to Skye"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/userlable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/locCardTitle"
+                android:paddingLeft="16dp"
+                android:text="Username" />
+
+            <EditText
+                android:id="@+id/userLogininput1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userlable"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/ff"
+                android:hint="pranjalmewaraa"
+                android:inputType="text"
+                android:maxLength="14"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7A7A" />
+
+            <TextView
+                android:id="@+id/EmaLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userLogininput1"
+                android:paddingLeft="16dp"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/EmaInputLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_below="@id/EmaLable"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/ff"
+                android:hint="xyz@gmail.com"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="16dp"
+                android:textColorHint="#7A7A7A" />
+
+
+            <TextView
+                android:id="@+id/PLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EmaInputLogin"
+                android:paddingLeft="16dp"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/PInputLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/PLable"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/ff"
+                android:inputType="textPassword"
+                android:hint="******"
+                android:textColor="@color/black"
+                android:textColorHint="#7A7A7A"
+                android:paddingHorizontal="16dp" />
+
+            <TextView
+                android:id="@+id/GLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/PInputLogin"
+                android:paddingLeft="16dp"
+                android:text="Gender" />
+
+            <EditText
+                android:id="@+id/GInputLogin"
+                android:layout_width="100dp"
+                android:paddingHorizontal="16dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/GLable"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/black"
+                android:background="@drawable/ff"
+                android:textColorHint="#7A7A7A"
+                android:layout_marginBottom="16dp"
+                android:hint="M/F"
+                android:inputType="textCapCharacters" />
+
+            <TextView
+                android:id="@+id/DLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/GInputLogin"
+                android:layout_toRightOf="@+id/GInputLogin"
+                android:paddingLeft="20dp"
+                android:text="D.O.B" />
+
+            <EditText
+                android:id="@+id/DInputLogin"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/GLable"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@id/GInputLogin"
+                android:background="@drawable/ff"
+                android:textColorHint="#7A7A7A"
+                android:inputType="date"
+                android:hint="DD/MM/YY"
+                android:paddingHorizontal="16dp"
+                />
+
+
+            <TextView
+                android:id="@+id/ContLable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DInputLogin"
+                android:paddingLeft="16dp"
+                android:text="Country" />
+
+            <EditText
+                android:id="@+id/ContInputLogin"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ContLable"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/ff"
+                android:inputType="text"
+                android:textColorHint="#7A7A7A"
+                android:hint="India"
+                android:paddingLeft="16dp"
+                android:paddingHorizontal="16dp" />
+
+            <TextView
+                android:id="@+id/CitLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ContInputLogin"
+                android:layout_toRightOf="@+id/ContInputLogin"
+                android:paddingLeft="20dp"
+                android:text="City" />
+
+            <EditText
+                android:id="@+id/CitInputLogin"
+                android:layout_width="140dp"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ContLable"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@id/ContInputLogin"
+                android:hint="Delhi"
+                android:background="@drawable/ff"
+                android:inputType="text"
+                android:paddingHorizontal="16dp"
+                android:textColorHint="#7A7A7A" />
+
+            <TextView
+                android:id="@+id/REmaLable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ContInputLogin"
+                android:paddingLeft="16dp"
+                android:text="Recovery Email" />
+
+            <EditText
+                android:id="@+id/REmaInputLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/REmaLable"
+                android:textColor="@color/black"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/ff"
+                android:hint="xyz2@gmail.com"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="16dp"
+                android:textColorHint="#7A7A7A" />
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/PButton"
+        android:padding="16dp"
+        android:onClick="CreateAccxx"
+        android:text="Create Account" />
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <ProgressBar
+        android:id="@+id/progressVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:background="@color/fui_transparent"
+        android:backgroundTint="@color/black"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/profileimg3"
+            android:src="@drawable/user"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Username"
+                android:textStyle="bold"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/white"
+                android:id="@+id/usernameVideoPage"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:text="Video description or caption"
+                android:id="@+id/videoDescription"
+                android:textColor="@color/white"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentEnd="true"
+        android:outlineProvider="bounds"
+        android:background="@color/fui_transparent"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/donlod"
+            android:id="@+id/likebutton"
+            android:layout_marginVertical="16dp"
+            android:background="@color/fui_transparent"
+            android:backgroundTintMode="multiply"
+            android:foregroundTint="@color/white"
+            android:backgroundTint="@color/fui_transparent"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/shares"
+            android:id="@+id/sharebtn"
+            android:layout_marginVertical="0dp"
+            android:background="@color/fui_transparent"
+            android:backgroundTintMode="multiply"
+            android:backgroundTint="@color/fui_transparent"
+            app:tint="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

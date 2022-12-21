@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/homt"
+        android:title="Home"/>
+    <item
+        android:id="@+id/nav_users"
+        android:icon="@drawable/searchico"
+        android:title="Search"/>
+    <item
+        android:id="@+id/nav_addblogs"
+        android:icon="@drawable/addico"
+        android:title="Post"/>
+
+    <item
+        android:id="@+id/nav_chat"
+        android:icon="@drawable/msg"
+        android:title="Chat"
+        />
+    <item
+        android:title="Profile"
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/user" />
+</menu>

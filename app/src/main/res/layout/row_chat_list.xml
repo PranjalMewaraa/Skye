@@ -1,0 +1,79 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/fui_transparent"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    app:cardMaxElevation="0dp"
+    android:outlineProvider="none"
+    app:contentPadding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user"
+            tools:targetApi="p" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/onlinestatus"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:id="@+id/nameonline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@id/profileimage"
+            android:layout_toRightOf="@id/profileimage"
+            android:paddingStart="16sp"
+            android:text="His Name"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/chatTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/nameonline"
+            android:gravity="end"
+            android:paddingVertical="4dp"
+            android:text="00:00"
+            android:textColor="@color/SButton" />
+
+        <TextView
+            android:id="@+id/lastmessge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameonline"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="32dp"
+            android:layout_toEndOf="@id/profileimage"
+            android:layout_toRightOf="@id/profileimage"
+            android:maxLines="1"
+            android:paddingStart="16sp"
+            android:text="Last Message"
+            android:textColor="@color/SText"
+            android:textSize="16sp" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

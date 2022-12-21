@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".ProfileFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="32dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="16dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimage1"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="64dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/user"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:id="@+id/ProfileName"
+                android:text="UserName"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/SText"
+                android:text="City, Country"
+                android:id="@+id/LocProfile"
+                android:gravity="center_horizontal"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/emailProfile"
+                 android:textColor="@color/SText"
+                android:text="Xyz123456@gmail.com"
+                android:gravity="center_horizontal"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_marginBottom="32dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:text="Edit Profile"
+                    android:backgroundTint="@color/SButton"
+                    android:id="@+id/EditProfileButton"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Log Out"
+                    android:layout_marginHorizontal="16dp"
+                    android:backgroundTint="@color/PButton"
+                    android:id="@+id/LogOutButton"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/ShowPosts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardad"
+        android:layout_marginHorizontal="16dp"
+        android:backgroundTint="@color/SButton"
+        android:drawableEnd="@drawable/img"
+        android:padding="16dp"
+        android:elevation="10sp"
+        android:text="Check Out your all posts" />
+
+
+</RelativeLayout>

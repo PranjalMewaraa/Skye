@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1054436567170",
+    "firebase_url": "https://skye-app-a870a-default-rtdb.firebaseio.com",
+    "project_id": "skye-app-a870a",
+    "storage_bucket": "skye-app-a870a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054436567170:android:c57de33fef6ec142576c9b",
+        "android_client_info": {
+          "package_name": "com.Devbypranjal.skyeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054436567170-ojoko4q4khdcad56jekln8bfqtu48plf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Devbypranjal.skyeapp",
+            "certificate_hash": "52c768a4c3d3d6e95c49f8efeda2b45c44d4980d"
+          }
+        },
+        {
+          "client_id": "1054436567170-5hftl8ojjiufchvv00834jk2ssu5rl9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJjFy3EnpFdwEiKxTKcFPj2efUavN9d_s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054436567170-5hftl8ojjiufchvv00834jk2ssu5rl9n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
