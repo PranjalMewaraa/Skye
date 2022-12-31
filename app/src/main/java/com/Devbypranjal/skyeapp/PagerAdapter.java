@@ -1,5 +1,7 @@
 package com.Devbypranjal.skyeapp;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.media.MediaPlayer;
@@ -79,7 +81,16 @@ public class PagerAdapter extends RecyclerView.Adapter<PagerAdapter.ViewHolder> 
                 holder.progressBar.setVisibility(View.GONE);
                 mediaPlayer.start();
                 mediaPlayer.isLooping();
-
+                float VideoRatio = ((float) mediaPlayer.getVideoWidth())/mediaPlayer.getVideoHeight();
+                float screenRatio= ((float) holder.Vview.getWidth())/holder.Vview.getHeight();
+                float scale=VideoRatio/screenRatio;
+                if(scale>1f){
+                    Log.e("scalex", "scalex ");
+                    holder.Vview.setScaleX(scale);
+                }else{
+                    holder.Vview.setScaleY((1f/scale));
+                    Log.e("scaley", "scaley ");
+                }
             }
         });
         holder.Vview.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
